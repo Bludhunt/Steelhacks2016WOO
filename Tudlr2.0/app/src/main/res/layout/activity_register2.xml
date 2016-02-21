@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    android:layout_gravity="center_horizontal"
+    android:rowCount="8"
+    android:columnCount="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="peter.tudlr.MyActivity"
+    tools:showIn="@layout/activity_register2"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="text"
+        android:hint="Major"
+        android:ems="10"
+        android:id="@+id/editMajor"
+        android:layout_row="0"
+        android:layout_column="0"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:inputType="text"
+        android:hint="Academic Year"
+        android:ems="10"
+        android:id="@+id/editYear"
+        android:layout_row="1"
+        android:layout_column="0"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:text="What subject could you tutor in?"
+        android:id="@+id/dropMessage1"
+        android:textSize="18dp"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:onClick="onRadioButtonClicked1">
+        <RadioButton android:id="@+id/cs_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Computer Science"
+            android:onClick="onRadioButtonClicked1"/>
+        <RadioButton android:id="@+id/math_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Math"
+            android:onClick="onRadioButtonClicked1"/>
+        <RadioButton android:id="@+id/chem_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Chemistry"
+            android:onClick="onRadioButtonClicked1"/>
+        <RadioButton android:id="@+id/religion_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Religion"
+            android:onClick="onRadioButtonClicked1"/>
+        <RadioButton android:id="@+id/physics_strength"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Physics"
+            android:onClick="onRadioButtonClicked1"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:text="What subject do you need help with?"
+        android:id="@+id/dropMessage2"
+        android:textSize="18dp"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:onClick="onRadioButtonClicked2">
+        <RadioButton android:id="@+id/cs_weakness"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Computer Science"
+            android:onClick="onRadioButtonClicked2"/>
+        <RadioButton android:id="@+id/math_weakness"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Math"
+            android:onClick="onRadioButtonClicked2"/>
+        <RadioButton android:id="@+id/chem_weakness"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Chemistry"
+            android:onClick="onRadioButtonClicked2"/>
+        <RadioButton android:id="@+id/religion_weakness"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Religion"
+            android:onClick="onRadioButtonClicked2"/>
+        <RadioButton android:id="@+id/physics_weakness"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:text="Physics"
+            android:onClick="onRadioButtonClicked2"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:text="Register"
+        android:onClick="register"/>
+
+
+
+</GridLayout>

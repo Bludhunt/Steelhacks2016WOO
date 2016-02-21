@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/profile_info">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.11">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewDevice"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:minHeight="100dp"
+            android:minWidth="100dp"
+            android:src="#000000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="left|top" />
+
+        <TextView
+            android:layout_width="123dp"
+            android:layout_height="80dp"
+            android:text="New Text"
+            android:id="@+id/textViewDevice"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_weight="0.08"
+            android:gravity="center_horizontal|left|fill_vertical"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:textColor="#50a5ff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="241dp"
+            android:layout_height="61dp"
+            android:text="New Text"
+            android:id="@+id/textView2"
+            android:layout_gravity="right|center_vertical"
+            android:paddingTop="3dp" />
+
+        <TextView
+            android:layout_width="239dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/textView"
+            android:layout_gravity="right|center_vertical" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="A man should learn to detect and watch that gleam that flashes across his mind from within, more than the lustre of the firmament of bards and sages. Yet he dismisses without notice his own thought, because it is his. In every work of genius we recognize our own rejected thoughts; they come back to us with a sort of alienated majesty."
+        android:id="@+id/textView3"
+        android:gravity="top"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.04" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Subjects I&apos;m good at (Classes Taken) :-"
+        android:id="@+id/textView4"
+        android:layout_weight="0.12"
+        android:paddingLeft="20dp"
+        android:textColor="#00237e"
+        android:paddingTop="20dp" />
+
+    <TextView
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Subjects I&apos;m bad at (Classes in prog) :-"
+        android:id="@+id/textView5"
+        android:layout_weight="0.24"
+        android:paddingLeft="20dp"
+        android:textColor="#8b0101"
+        android:paddingTop="30dp" />
+
+</LinearLayout>

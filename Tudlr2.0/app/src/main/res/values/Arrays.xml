@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name = "names_stuff">
+        <item>Peter</item>
+        <item>Tyler</item>
+        <item>John</item>
+    </string-array>
+    <string-array name = "about_tutor">
+        <item>Year: Sophmore</item>
+        <item>Year: Junior</item>
+        <item>Year: Junior</item>
+
+    </string-array>
+
+
+</resources>

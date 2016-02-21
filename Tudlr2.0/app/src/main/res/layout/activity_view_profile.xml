@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    android:layout_gravity="center_horizontal"
+    android:rowCount="6"
+    android:columnCount="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="peter.tudlr.MyActivity"
+
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/GridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".GridXMLActivity"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:rowCount="1"
+        android:columnCount="2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+
+        <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/GridLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context=".GridXMLActivity"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:rowCount="2"
+            android:columnCount="1">
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="Name" />
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:text="Email" />
+
+        </GridLayout>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/profile_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:text="Nothin' to say" />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/GridLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:context=".GridXMLActivity"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:rowCount="1"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/profile_strengths"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="No strengths" />
+
+        <TextView
+            android:id="@+id/profile_weaknesses"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="No weakness" />
+
+    </GridLayout>
+
+
+
+</GridLayout>
